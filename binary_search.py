@@ -1,12 +1,12 @@
 # Python Program for recursive binary search.
-
+# input sorted list
 # Returns index of x in arr if present, else -1
 def binarySearch (arr, l, r, x):
 
     # Check base case
     if r >= l:
 
-        mid = l + (r - l)/2
+        mid = l + (r - l)//2
 
         # If element is present at the middle itself
         if arr[mid] == x:
@@ -26,14 +26,14 @@ def binarySearch (arr, l, r, x):
         # Element is not present in the array
         return -1
 
-  # Test array
-      arr = [ 2, 3, 4, 10, 40 ] 
-      x = 10
+ # Test array
+arr = [2,3,4,10,40]
+x = 10
 
-      # Function call
-      result = binarySearch(arr, 0, len(arr)-1, x)
+ # Function call
+result = binarySearch(arr, 0, len(arr)-1, x)
 
-      if result != -1:
-          print "Element is present at index % d" % result
-      else:
-          print "Element is not present in array"
+if result != -1:
+    print ("Element is present at index % d" % result)
+else:
+    print ("Element is not present in array")
