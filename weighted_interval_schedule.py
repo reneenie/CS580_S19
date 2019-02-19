@@ -30,6 +30,7 @@ def  binarySearch(job, start_index):
     # Initialize 'lo' and 'hi' for Binary Search
     lo = 0
     hi = start_index - 1
+    print(start_index)
 
     # Perform binary Search iteratively
     while lo <= hi:
